@@ -5,3 +5,9 @@
 logs/
 log/
 
+.DS_Store
+*.swp
+*.swo
+.env
+__pycache__/
+*.pyc
