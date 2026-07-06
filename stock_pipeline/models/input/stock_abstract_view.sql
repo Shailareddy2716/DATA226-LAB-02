@@ -2,4 +2,4 @@ SELECT
     symbol,
     date,
     close
-FROM DEV.RAW_DATA.LAB2
+FROM DEV.RAW_DATA.STOCK_ANALYTICS

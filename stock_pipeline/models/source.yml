@@ -6,8 +6,8 @@ sources:
     schema: RAW_DATA
     description: "Schema which stores raw stock data (ETL)"
     tables:
-      - name: LAB2
-        identifier: LAB2
+      - name: STOCK_ANALYTICS
+        identifier: STOCK_ANALYTICS
         description: "Raw stock data from Airflow ETL process"
         columns:
           - name: symbol

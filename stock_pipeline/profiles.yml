@@ -1,4 +1,4 @@
-lab2:
+stock_pipeline:
   outputs:
     dev:
       account: DUVNOQL-ATB72342

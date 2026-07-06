@@ -1,4 +1,4 @@
-{% snapshot lab2_snapshot %}
+{% snapshot stock_snapshot %}
   {{
     config(
       target_schema='raw_data',
@@ -10,6 +10,6 @@
   }}
 
   -- Snapshot query to capture data
-  select * from DEV.RAW_DATA.LAB2
+  select * from DEV.RAW_DATA.STOCK_ANALYTICS
 
 {% endsnapshot %}

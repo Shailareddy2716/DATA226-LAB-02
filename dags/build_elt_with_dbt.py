@@ -5,7 +5,7 @@ from airflow.operators.python import PythonOperator
 from airflow.hooks.base import BaseHook
 import snowflake.connector
 
-DBT_PROJECT_DIR = "/opt/airflow/lab2"
+DBT_PROJECT_DIR = "/opt/airflow/stock_pipeline"
 
 # Snowflake connection information
 conn = BaseHook.get_connection('snowflake_conn')
@@ -13,7 +13,7 @@ conn = BaseHook.get_connection('snowflake_conn')
 # Define a function to check idempotency
 def check_for_new_data():
     query = """
-    SELECT COUNT(*) FROM DEV.RAW_DATA.LAB2 
+    SELECT COUNT(*) FROM DEV.RAW_DATA.STOCK_ANALYTICS 
     WHERE DATE = CURRENT_DATE;
     """
     # Connect to Snowflake
